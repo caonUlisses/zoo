@@ -1,6 +1,6 @@
 ## Zoo [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/caonUlisses/zoo/issues) [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]() [![Gemnasium](https://img.shields.io/gemnasium/mathiasbynens/he.svg)]() [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
-![Zoo - An electric zoo for electric people](img/logo.png =200px)
+![Zoo - An electric zoo for electric people](img/logo.png =200x)
 
 ## An electric zoo for electric people
 
