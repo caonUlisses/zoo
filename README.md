@@ -57,6 +57,9 @@ $ sudo zoo lemp-stop
 $ sudo zoo lemp-restart
 
 # This one shows the status of the services
+# A plus sign means the service is running
+# A minnus sign means the service is stopped
+# If a question mark shows up, the status is unkown
 $ sudo zoo lemp-status
 
 ```
