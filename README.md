@@ -78,7 +78,19 @@ This command will make a new file inside the `/etc/nginx/sites-available` called
 Make your changes, save and nginx will automatically restart.
 
 
-There is another command, for Laravel specific apps:
+There is another command, for Laravel specific apps. If you're using Laravel, make sure to run this command first:
+
+> For Laravel, you'll need this:
+
+```bash
+# cd into the repo folder
+$ sudo mv templates/laravel /etc/nginx/sites-available/laravel
+
+```
+This will create the file the animals need to create your Laravel servers.
+
+After the file is set, you may run:
+
 
 ```bash
 $ sudo zoo laravel site site.app
