@@ -7,6 +7,8 @@ EDITOR=vi
 NGINX_PATH="/etc/nginx/sites-available"
 NGINX_ENABLED="/etc/nginx/sites-enabled"
 
+# If you use another version of PHP change this file
+PHP=php7.0-fpm
 
 echo "Welcome to the zoo!"
 
