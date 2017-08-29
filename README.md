@@ -97,6 +97,15 @@ $ sudo zoo laravel site site.app
 
 ``` 
 
+There is a super command, that does all of the configuration and also creates a laravel project with correct folder and file permission/ownership! Just run:
+
+```bash
+$ sudo zoo laravel-create blog blog.app
+# And you're good to go!
+
+```
+
+
 If you want to delete a config file from one of your sites, zoo also provides a command for that:
 
 ```bash
