@@ -31,6 +31,25 @@ laravel(){
 
 }
 
+laravel-create(){
+    NEW_PATH="$NGINX_PATH/$1"
+    cp $NGINX_PATH/laravel $NEW_PATH
+    ln $NEW_PATH $NGINX_ENABLED/$1
+    sed -i "4i 127.0.0.1   "${2}"" /etc/hosts
+    composer create-project --prefer-dist laravel/laravel /var/www/$1
+    chown -R www-data:www-data /var/www/$1
+    chmod -R 775 /var/www/$1/public
+    find /var/www/$1 -type f -exec chmod 644 {} \;
+    find /var/www/$1 -type d -exec chmod 755 {} \;
+    cd /var/www/$1
+    chgrp -R www-data storage bootstrap/cache
+    chmod -R ug+rwx storage bootstrap/cache
+    $EDITOR $NEW_PATH
+    composer update
+    npm install
+    sudo service nginx restart
+}
+
 delete(){
     NEW_PATH="$NGINX_PATH/$1"
     if [ -f $NEW_PATH ]; then
